@@ -91,7 +91,7 @@ class DealerItemController extends Controller
             $file=$request->file('item_image');
             $extension=$file->getClientOriginalExtension();
             $filename=time().'.'.$extension;
-            $file->move('uploads/item/',$filename);
+            $file->move(public_path('assets/item'),$filename);
             $item->di_image=$filename;
         }
     
