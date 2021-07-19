@@ -23,9 +23,7 @@ table td:hover {
     <div class="contanier">
     <div class="row">
     <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <br>
-    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
-    <br>
+    
     @if (count($data1)>0)
     
     <h2>Items to be delivered<br></h2>
@@ -135,6 +133,11 @@ From <input type="date" name="from" id="from" min="05/05/2021" max="05/05/2022">
   </div>
   </div>
   @endif
+  <br>
+  <center>
+    <br>
+    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+    </center><br>
   </div>
   
   <script>

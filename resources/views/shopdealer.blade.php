@@ -6,7 +6,7 @@
     <br>
         <h1 class="mb-4">Purchase Order</h1>
     <br>
-    @if(count($data1)>0)
+    
     @if(Session::get('f'))
                <div class="alert alert-danger">
                   {{ Session::get('f') }}
@@ -25,7 +25,7 @@
     <div class="container">
    
    <div class="row">
-    
+   @if(count($data1)>0)
     <table class="table table-stripped table-hover table-responsive  ">
     <thead class="thead-dark">
     <tr class="dark">
@@ -87,7 +87,7 @@
       <td>{{ $di->di_price }}</td>
       <td>{{ $di->view_price }}</td>
       <td>
-      @if ($di->d_id == 1)
+        @if ($di->d_id == 0)
        Not from dealer
         @else
         {{ $di->d_name }}
@@ -101,9 +101,5 @@
   <p class="text-dark"><h4>No Purchase History</h4></p>
   @endif
   </div>
-  <br>
-  <center>
-  <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
-  </center>
   </div>
 @endsection
