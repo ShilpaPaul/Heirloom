@@ -91,7 +91,10 @@ hr.rounded {
     </div>
 
     </div>
-
+    <br>
+    <center>
+    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+    </center>
 
     </div>
     

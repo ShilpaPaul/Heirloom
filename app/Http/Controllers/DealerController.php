@@ -42,7 +42,7 @@ class DealerController extends Controller
             'd_mail'=>'required|email|unique:dealer_models',
             'password'=>'required|min:5|max:12',
             'name'=>'required',
-            'phone_no'=>'required|min:7|max:15',
+            'phone_no'=>'required|min:10|max:15',
             'confirm_password'=>'required|min:5|max:12',
         ]);
         

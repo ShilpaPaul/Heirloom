@@ -25,6 +25,7 @@
     <div class="container">
    
    <div class="row">
+    
     <table class="table table-stripped table-hover table-responsive  ">
     <thead class="thead-dark">
     <tr class="dark">
@@ -86,7 +87,7 @@
       <td>{{ $di->di_price }}</td>
       <td>{{ $di->view_price }}</td>
       <td>
-        @if ($di->d_id == 0)
+      @if ($di->d_id == 1)
        Not from dealer
         @else
         {{ $di->d_name }}
@@ -100,5 +101,9 @@
   <p class="text-dark"><h4>No Purchase History</h4></p>
   @endif
   </div>
+  <br>
+  <center>
+  <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+  </center>
   </div>
 @endsection

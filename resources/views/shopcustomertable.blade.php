@@ -6,7 +6,9 @@
         <h1 class="mb-4">Customer Details</h1>
     <br>
    
-    
+    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+    <br>
+    <br>
    
     <table class="table table-stripped  table-responsive  ">
     <thead class="thead-dark">

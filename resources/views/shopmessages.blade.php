@@ -7,6 +7,9 @@
     <br>
    
     
+    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+    <br>
+    
    @if(count($msg)>0)
     <table class="table table-stripped  table-responsive  ">
     <thead class="thead-dark">

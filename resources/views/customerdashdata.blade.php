@@ -11,9 +11,10 @@ hr.rounded {
 </style>
     <div class="container">
     @if(count($data1)>0)
+    
     <br>
     <h1>Orders Placed</h1>
-    <br>
+    
     @foreach($data1 as $di)
     <div class="row">
     <div class="jumbotron">
@@ -79,6 +80,9 @@ hr.rounded {
     <p class="text-dark"><h4>No Purchases</h4></p>
     @endif
     </div>
- 
+    <br>
+    <center>
+    <button id="hide" class="btn btn-primary" onclick="window.print()">Print</button>
+    </center><br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 @endsection

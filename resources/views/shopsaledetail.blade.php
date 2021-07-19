@@ -26,12 +26,13 @@ hr.rounded {
                   {{ Session::get('fail') }}
                </div>
     @endif
-    <br>
+    
     <div class="container">
     <div class="row">
     <!-- <div class="jumbotron"> -->
         
     <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6">
+    
     <h2 class="mb-4">Customer Details</h2>
     <br>
     <table class="table table-borderless">
@@ -69,6 +70,7 @@ hr.rounded {
     <tr>  <th scope="col">STATUS</th><td>{{ $di['di_status'] }}</td></tr>
     </tbody>
     </table>
+    
     </div>
 
     <!-- <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
@@ -76,7 +78,11 @@ hr.rounded {
     </div> -->
 
     </div>
-
+    <br>
+    <br>
+    <center>
+    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+    </center>
 
     </div>
     

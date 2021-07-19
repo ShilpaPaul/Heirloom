@@ -5,7 +5,9 @@
     <br>
         <h1 class="mb-4">Dealer Details</h1>
     <br>
-   
+    <button id="hide" class="btn btn-primary" onclick="window.print()">&nbsp;Print&nbsp;</button>
+    <br>
+    <br>
     
    
     <table class="table table-stripped  table-responsive  ">
